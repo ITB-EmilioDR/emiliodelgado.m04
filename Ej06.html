@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Formulario</title>
+    <meta name="author" content="Emilio Delgado">
+    <meta name="description" content="Ejercicios en general">
+    <link rel="icon" type="image/ico" href="image/favicon.ico">
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>===================================================</p>
+        <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+        <p>===================================================</p>
+        <p>Sexo:
+          <input type="radio" name="hm" value="h"> Hombre
+          <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>===================================================</p>
+        <p>Selección múltiple:</p>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label><br><br>
+          <input type="submit" value="Submit">
+        <p>===================================================</p>
+        <p>Requerido:</p>
+        <p>Apodo: <input type="required" required="Apodo" size="40"></p>
+        <p> 
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Borrar">
+        </p> 
+        <p>===================================================</p>
+        <p>Correo electrónico: <input type="email" size="40"></p>
+      </form>
+</body>
+</html>
